@@ -34,7 +34,6 @@ bool pierwsza(int a)
 
 int main() {
     int a, b;
-    cout<<tab.size();
     cout << "Podaj liczbe calkowita ";
     cin >> a >> b;
     int wyjscie;
@@ -44,7 +43,13 @@ int main() {
         cout << "MENU" << endl;
         cout << "Podaj numer czynnosci, ktora chcesz wykonac" << endl;
         cout << "0. Wyjscie" << endl;
+        cout << "1. Sprawdz czy pierwsza" << endl;
         cin >> wyjscie;
+        if(wyjscie==1)
+        {
+            if(pierwsza(a)) cout<<"true"<<endl;
+            else cout<<"false"<<endl;
+        }
     } while(wyjscie != 0);
     return 0;
 }
